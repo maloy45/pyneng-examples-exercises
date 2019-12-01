@@ -10,6 +10,5 @@
 '''
 
 config = 'switchport trunk allowed vlan 1,3,10,20,30,100'
-vlans = config[config.find('1')::]
-list_vlans = list(vlans.split(','))
-print(list_vlans)
+vlans = config.split()[-1].split(',')
+print(vlans)
