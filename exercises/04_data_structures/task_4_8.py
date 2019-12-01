@@ -19,3 +19,11 @@
 '''
 
 ip = '192.168.3.1'
+oct1 = int(ip.split('.')[0])
+oct2 = int(ip.split('.')[1])
+oct3 = int(ip.split('.')[2])
+oct4 = int(ip.split('.')[3])
+print(f'''
+{oct1:<10} {oct2:<10} {oct3:<10} {oct4:<10}
+{oct1:010b} {oct2:010b} {oct3:010b} {oct4:010b}''')
+

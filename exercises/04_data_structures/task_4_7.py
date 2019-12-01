@@ -10,3 +10,7 @@
 '''
 
 mac = 'AAAA:BBBB:CCCC'
+mac1 = int(mac.split(':')[0], 16)
+mac2 = int(mac.split(':')[1], 16)
+mac3 = int(mac.split(':')[2], 16)
+print(f'{mac1:b}{mac2:b}{mac3:b}')
